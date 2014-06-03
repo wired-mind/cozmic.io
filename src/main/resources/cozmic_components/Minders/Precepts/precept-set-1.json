@@ -1,0 +1,25 @@
+{
+    "name": "precept-set-1",
+    "description": "Evermind persist and repeat",
+    "type": "ordered-process-list",
+    "precepts": [
+        {
+            "order_id": 1,
+            "name": "repeater-1",
+            "instrument": "http-repeater-1",
+            "instrument_type": "HTTPRepeater",
+            "instrument_address": "http-repeater-1",
+			"needs_reply": true,
+            "action": "forward"
+        },
+		{
+            "order_id": 2,
+            "name": "counter-1",
+            "instrument": "counter-1",
+            "instrument_type": "Counter",
+            "instrument_address": "counter-1",
+			"needs_reply": false,
+            "action": "complete"
+        }
+    ]
+}

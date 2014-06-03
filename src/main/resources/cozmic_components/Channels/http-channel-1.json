@@ -1,0 +1,18 @@
+{
+    "http-channel-1": {
+        "name" : "http-channel-1",
+        "owner_address": "http-channel-1",
+        "class": "io.cozmic.channelz.HTTP.HTTPChannel",
+		"instances": 2,
+        "host": "localhost",
+         "port": 80,
+         "conduit_address": "emanator.conduit",
+         "emanator_conduit_config": {
+            "queue_name": "Emanator.Queue",
+            "cluster_name": "Emanator",
+            "cluster_password": "emanator-pass",
+            "cluster_address": "127.0.0.1",
+            "inbound_address": "emanator.conduit"
+         }
+     }
+ }

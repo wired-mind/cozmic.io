@@ -1,0 +1,67 @@
+<!doctype html> 
+<html lang="en" manifest="jsonlint.manifest"> 
+    <head>
+        <meta charset="utf-8">
+
+        <title>
+            Cozmic.io Configurations Editor
+        </title>
+        <script type="text/javascript">
+            if (typeof JSON === 'undefined') {
+                document.write('<sc' + 'ript type="text/javascript" src="c/js/json2.js"></sc' + 'ript>');
+            }
+        </script>
+	<script src="c/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="c/js/jquery-linedtextarea/jquery-linedtextarea.js" type="text/javascript"></script>
+        <link href="c/js/jquery-linedtextarea/jquery-linedtextarea.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="c/js/jsl.parser.js"></script>
+        <script type="text/javascript" src="c/js/jsl.format.js"></script>
+        <script type="text/javascript" src="c/js/jsl.interactions.js"></script>
+        <link rel="stylesheet" href="c/css/blueprint/compressed/screen.css" type="text/css" media="screen, projection">
+        <!--[if IE]><link rel="stylesheet" href="c/css/blueprint/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
+        <link rel="stylesheet" href="c/css/blueprint/plugins/css-classes/css-classes.css" type="text/css" media="screen, projection">
+        <link rel="stylesheet" href="c/css/screen.css" type="text/css" media="screen, projection">
+    </head>
+    <body>
+        <div class="container">
+            <div class="banner clear">
+                <div class="left">
+                    <h1 id="headerText">
+                        COZMIC.IO
+                    </h1>
+                    <h3>
+                        Cozmic.io Configurations Editor
+                    </h3>
+                    
+                </div>
+                <div class="right span-12 unimportant" style="text-align: right;">
+                   
+                </div>
+            </div>
+            <hr>
+            <form id="JSONValidate" method="post" action="." name="JSONValidate">
+                <input type="hidden" id="reformat" value="1" />
+                <input type="hidden" id="compress" value="0" />
+                <div>
+                    <textarea id="json_input" name="json_input" class="json_input" rows="30" cols="100" spellcheck="false" placeholder="Enter JSON to validate, or a URL to JSON to validate."></textarea>
+                </div>
+                <div class="validateButtons clear">
+                    <div class="left">
+                        <button name="validate" id="validate" value="Validate" class="button left bold" onclick="javascript: pageTracker._trackPageview('/validate');">Validate</button>
+                    </div>
+                    <div class="right">
+
+                    </div>
+                    <div class="right small kindling">
+            
+                    </div>
+                </div>
+            </form>
+            <div id="results_header" class="hide">
+                <h3>
+                    Results <img title="Loading..." class="reset" alt="Loading" src="c/images/loadspinner.gif" id="loadSpinner" name="loadSpinner">
+                </h3>
+            </div>
+            <pre id="results"></pre>
+    </body>
+</html>

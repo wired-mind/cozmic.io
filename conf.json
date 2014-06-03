@@ -1,0 +1,7 @@
+// Example JSON config file
+
+    {
+        "cozmic_components": "C:\\vert.x-2.1\\mods\\io.cozmic~io.cozmic~1.0.0-final\\cozmic_components",
+        "cozmic_editor": "C:\\vert.x-2.1\\mods\\io.cozmic~io.cozmic~1.0.0-final\\cozmic_web",
+        "cozmic_bridge": "C:\\vert.x-2.1\\mods\\io.cozmic~io.cozmic~1.0.0-final\\cozmic_bridge"
+    }

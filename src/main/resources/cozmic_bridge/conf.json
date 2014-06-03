@@ -1,0 +1,10 @@
+{
+    "name":"cozmic_bridge",
+    "host": "0.0.0.0",
+    "port": 9999,
+    "static_files": false,
+    "bridge": true,
+    "inbound_permitted": [{"address":"server.registration"}],
+    "outbound_permitted": []
+
+}

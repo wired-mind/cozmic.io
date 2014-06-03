@@ -1,0 +1,23 @@
+{
+    "http-repeater-1": {
+        "name": "http-repeater-1",
+        "class": "io.cozmic.instruments.HTTPRepeater",
+        "owner_address": "http-repeater-1.config",
+        "inbound_address": "http-repeater-1",
+		"failures_address": "minder-1.failures",
+		"registration_address": "server.registration",
+        "load_balanced": true,
+        "targets": [
+            {
+                "host": "events1.evermind.us",
+                "port": 9000,
+                "maxPoolSize": 10
+            },
+            {
+                "host": "localhost",
+                "port": 8888,
+                "maxPoolSize": 10
+            }
+        ]
+    }
+}

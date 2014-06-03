@@ -1,0 +1,22 @@
+{
+	"Emanator": {
+	    "name": "Emanator",
+	    "class": "io.cozmic.emanator.Emanator",
+	    "conduits": ["minder-1.conduit"],
+	    "inbound_address": "emanator.inbound",
+	    "owner_address": "emanator",
+
+	     "emanator_queue_service": {
+	        "hazelcast_config": "C:\\vert.x-2.1\\mods\\io.cozmic~io.cozmic~1.0.0-final\\platform_lib\\hazelcast.xml"
+	     },
+
+	    "emanator_queue_listener": {
+            "queue_name": "Emanator.Queue",
+            "cluster_name": "Emanator",
+            "cluster_password": "emanator-pass",
+            "cluster_address": "127.0.0.1",
+            "outbound_address": "emanator.inbound",
+            "requeue_message_address": "emanator.requeue"
+	  }
+	}
+}

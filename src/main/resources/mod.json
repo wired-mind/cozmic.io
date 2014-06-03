@@ -1,0 +1,15 @@
+{
+
+  // Starter verticle
+  "load-from-module-first": true,
+  "main": "io.cozmic.CozmicMonitor",
+
+  // If your module is going to be registered in the Vert.x module registry you will also need the following
+  // mandatory fields
+  "description":"Cozmic.io Framework",
+  "license": ["The Apache Software License Version 2.0"],
+  "author": "Eric Reuthe",
+
+  "auto-redeploy": false
+
+}

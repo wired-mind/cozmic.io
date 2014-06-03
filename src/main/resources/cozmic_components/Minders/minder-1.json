@@ -1,0 +1,21 @@
+{
+    "minder-1": {
+        "name" : "minder-1",
+        "owner_address": "minder-1",
+        "class": "io.cozmic.minders.Minder",
+        "instances": 1,
+        "conduit_address": "minder-1.conduit",
+		"journal_address": "minder-1.journal",
+		"normalization_address": "minder-1.normalize",
+		"failures_address": "minder-1.failures",
+		"inprocess_address": "minder-1.inprocess",
+        "precepts_directory": "C:\\vert.x-2.1\\mods\\io.cozmic~io.cozmic~1.0.0-final\\cozmic_components\\Minders\\Precepts",
+        "precept_set": "precept-set-1.json",
+        "journal_database": {
+            "data_dir": "~/datastore/journal",
+            "user": "cozmic.io",
+            "password": "cozmic.io"
+        }
+    }
+
+}

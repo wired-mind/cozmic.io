@@ -1,0 +1,9 @@
+{
+    "counter-1": {
+        "name": "counter-1",
+        "class": "io.cozmic.instruments.Counter",
+        "owner_address": "counter-1.config",
+        "inbound_address": "counter-1",
+        "failures_address": "minder-1.failures"
+    }
+}

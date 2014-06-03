@@ -1,0 +1,8 @@
+{
+    "name":"cozmic_editor",
+    "web_root": "cozmic_web/editor",
+    "index_page": "index.html",
+    "host": "0.0.0.0",
+    "port": 7777,
+    "static_files": true
+}
